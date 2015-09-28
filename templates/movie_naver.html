@@ -1,0 +1,12 @@
+{% for key, value in upcoming_list.items() %}
+    <h2>{{ key.strftime('%Y년 %-m월 %-d일') }}</h2>
+    {% for movie in value %}
+    
+    <h3>{{ movie.title }}</h3>
+    <ul>
+    	<li>감독: {{ movie.director }}</li>
+    	<li>배우: {{ movie.actor }}</li>
+    	<li>장르: {{ movie.genre }}</li>
+    </ul>
+    {% endfor %}
+{% endfor %}

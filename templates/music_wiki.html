@@ -1,0 +1,11 @@
+{% for key, value in upcoming_list.items() %}
+    <h2>{{ key.strftime('%Y년 %-m월 %-d일') }}</h2>
+    {% for music in value %}
+    
+    <h3>{{ music.album }}</h3>
+    <ul>
+    	<li>가수: {{ music.artist }}</li>
+    	<li>장르: {{ music.genre }}</li>
+    </ul>
+    {% endfor %}
+{% endfor %}
