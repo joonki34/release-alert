@@ -1,7 +1,7 @@
 from flask import Flask
 from flask import render_template
-from config import Config
-from scraper import Scraper
+from app.config import Config
+from app.scraper import Scraper
 import pickle
 scraper = Scraper()
 app = Flask(__name__)
@@ -32,6 +32,6 @@ def music_wiki():
 
 	return render_template('music_wiki.html', upcoming_list=upcoming_list)
 
-if __name__ == '__main__':
+def run():
 	scraper.start()
 	app.run(debug=True)

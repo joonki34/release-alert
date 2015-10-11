@@ -2,9 +2,9 @@ import time
 import os
 import urllib.request
 from apscheduler.schedulers.background import BackgroundScheduler
-from config import Config
-from parser_movie import MovieParser
-from parser_music import MusicParser
+from app.config import Config
+from app.parser_movie import MovieParser
+from app.parser_music import MusicParser
 
 class Scraper(object):
 	"""docstring for Scraper"""

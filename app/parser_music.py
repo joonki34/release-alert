@@ -3,7 +3,7 @@ import pickle
 from bs4 import BeautifulSoup
 from collections import OrderedDict
 from pytz import timezone
-from models import Music
+from app.models import Music
 
 class MusicParser:
 	def __init__(self, html_doc):

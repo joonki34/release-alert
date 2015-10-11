@@ -3,7 +3,7 @@ import pickle
 from bs4 import BeautifulSoup
 from bs4.element import Tag
 from collections import OrderedDict
-from models import Movie
+from app.models import Movie
 
 class MovieParser:
 	def __init__(self, html_doc):
